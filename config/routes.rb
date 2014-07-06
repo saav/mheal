@@ -13,6 +13,8 @@ Mheal::Application.routes.draw do
   get 'booking', to: 'statuses#index',as: :booking
   root to: 'statuses#index'
 
+  get '/:id', to: 'profiles#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
